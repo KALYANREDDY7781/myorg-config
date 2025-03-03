@@ -1,0 +1,9 @@
+build:
+  version: "1.2"
+
+orders:
+  message: "Welcome to Payments Microservice - Prod"
+  contactDetails:
+    name: "GKR"
+    email: "gkr@gmail.com"
+  
