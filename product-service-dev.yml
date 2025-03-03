@@ -14,6 +14,7 @@ spring:
     url: jdbc:mysql://localhost:3306/product_db
     username: springstudent
     password: springstudent
+    driver-class-name: com.mysql.cj.jdbc.Driver
 
 server:
   port: 8081
