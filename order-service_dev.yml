@@ -7,3 +7,38 @@ orders:
     name: "GKR"
     email: "gkr@gmail.com"
   
+spring:
+  application:
+    name: order-service
+  datasource:
+    url: jdbc:mysql://localhost:3306/order_db
+    username: springstudent
+    password: springstudent
+
+server:
+  port: 8082
+  error:
+    include-stacktrace: never
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    shutdown:
+      access: unrestricted
+  info:
+    env:
+      enabled: true
+
+info:
+  app:
+    name: "Order"
+    description: "Orders Microservice"
+    version: "1.0"
